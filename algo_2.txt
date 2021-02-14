@@ -1,0 +1,12 @@
+//test ===> http://playcode.io/
+
+$(document).ready(function(){
+   var str = "Go My Code";
+   console.log("le nombre de caractères",str.length); 
+    var words = str.split(' ');
+  console.log("Le nombre de mots dans la phrase ",words.length);
+   var m = str.match(/[aeiou]/gi);
+  console.log("Le nombre de voyelles dans la phrase",m === null ? 0 : m.length);
+
+});
+ 

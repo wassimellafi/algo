@@ -1,0 +1,37 @@
+//Le nombre de mots dans la phrase
+
+function compteMots(ph)
+    nbMots = 1;
+    i = 0;
+   while (i < ph.length) {
+        if (ph[i] == " " && ph != ""){
+            nbMots = nbMots + 1
+        }else if (ph == ""){
+            nbMots = 0
+            i = i + 1
+            }
+           return nbMots
+
+          }     
+
+//La longueur de la phrase
+
+function comptecaracter(ch)
+
+ for (var int i=0; i<ch.length-1; i++) { 
+       return i ; 
+    }  
+
+
+//Le nombre de voyelles dans la phrase.
+
+function getvoyelles(str) {
+  var voyellesCount = 0;
+  var string = str.toString();
+  for (var i = 0; i <= str.length - 1; i++) {
+    if (str.charAt(i) == "a" || str.charAt(i) == "e" || str.charAt(i) == "i" || str.charAt(i) == "o" || str.charAt(i) == "u") {
+      voyellesCount += 1;
+    }
+  }
+  return voyellesCount;
+}
